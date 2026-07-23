@@ -1,0 +1,42 @@
+.reports{
+    padding:30px;
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+.reports h1{
+    text-align:center;
+    color:#0f3d91;
+    margin-bottom:30px;
+}
+
+.report-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.report-card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.report-card:hover{
+    transform:translateY(-8px);
+}
+
+.report-card h2{
+    font-size:45px;
+    color:#0f3d91;
+    margin-bottom:15px;
+}
+
+.report-card p{
+    font-size:18px;
+    color:#555;
+    font-weight:600;
+}

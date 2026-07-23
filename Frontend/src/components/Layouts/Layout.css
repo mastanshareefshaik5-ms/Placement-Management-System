@@ -1,0 +1,118 @@
+/* ================================
+   MAIN LAYOUT
+================================ */
+
+.layout{
+    width:100%;
+    min-height:100vh;
+    background:#f4f7fc;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ================================
+   BODY
+================================ */
+
+.layout-body{
+    display:flex;
+    flex:1;
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+.main-content{
+
+    flex:1;
+
+    margin-left:250px;
+
+    margin-top:70px;
+
+    min-height:calc(100vh - 70px);
+
+    padding:30px;
+
+    background:#f4f7fc;
+
+    overflow-x:auto;
+
+    transition:.3s;
+
+}
+
+/* ================================
+   TABLE RESPONSIVE
+================================ */
+
+.main-content table{
+
+    width:100%;
+
+}
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+.main-content::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.main-content::-webkit-scrollbar-thumb{
+
+    background:#0f3d91;
+
+    border-radius:20px;
+
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media(max-width:992px){
+
+.main-content{
+
+margin-left:220px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.layout-body{
+
+flex-direction:column;
+
+}
+
+.main-content{
+
+margin-left:0;
+
+width:100%;
+
+margin-top:70px;
+
+padding:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.main-content{
+
+padding:15px;
+
+}
+
+}

@@ -1,0 +1,177 @@
+.table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+    padding:20px;
+
+}
+
+.student-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:900px;
+
+}
+
+.student-table thead{
+
+    background:#0f3d91;
+
+    color:white;
+
+}
+
+.student-table th{
+
+    padding:16px;
+
+    text-align:center;
+
+}
+
+.student-table td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.student-table tbody tr:hover{
+
+    background:#f5f9ff;
+
+}
+
+.action-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn{
+
+    border:none;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    transition:.3s;
+
+}
+
+.view-btn{
+
+    background:#0d6efd;
+
+}
+
+.view-btn:hover{
+
+    background:#0b5ed7;
+
+}
+
+.edit-btn{
+
+    background:#198754;
+
+}
+
+.edit-btn:hover{
+
+    background:#157347;
+
+}
+
+.delete-btn{
+
+    background:#dc3545;
+
+}
+
+.delete-btn:hover{
+
+    background:#bb2d3b;
+
+}
+
+.no-student{
+
+    background:white;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.no-student h2{
+
+    color:#0f3d91;
+
+    margin-bottom:15px;
+
+}
+
+.no-student p{
+
+    color:#666;
+
+}
+
+@media(max-width:900px){
+
+.action-buttons{
+
+flex-direction:column;
+
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
